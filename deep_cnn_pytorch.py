@@ -184,8 +184,8 @@ is_correct = (torch.argmax(pred, dim=1) == mnist_test_dataset.targets).float()
 print(f'Test accuracy: {is_correct.mean():.4f}')
 # The CNN model achieves an accuracy of 99.07%. We got approximately 95% accuracy using only fully connected layers
 
-# Get the prediction results in the form of class-membership probabilities and conver to predicted labels
-# using torch.argmax function to find the elemnt with the maximum probability. Do this for batch of 12 examples
+# Get the prediction results in the form of class-membership probabilities and convert to predicted labels
+# using torch.argmax function to find the element with the maximum probability. Do this for batch of 12 examples
 # and visualize the input and predicted labels
 fig = plt.figure(figsize=(12, 4))
 for i in range(12):
